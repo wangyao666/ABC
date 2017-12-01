@@ -1,0 +1,134 @@
+body{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: .12rem;
+  background: #cccccc5c;
+  display: flex;
+  -webkit-flex-direction: column;
+}
+header{
+  position: relative;
+  background: #fff;
+  img{
+    margin-left: .15rem;
+    margin-top: .1rem;
+    width: 1.3rem;
+  }
+  span{
+    color: #ccc;
+  }
+  .firsticon{
+    position: absolute;
+    right: .35rem;
+    top: .06rem;
+  }
+  .secondicon{
+    position: absolute;
+    right: .1rem;
+    top: .06rem;
+  }
+}
+section{
+  flex: 1;
+  .top{
+    .topp{
+      height: 142px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .tit{
+    padding: 0 .02rem;
+    li{
+      position: relative;
+      padding: 0 .05rem;
+      background: #fff;
+      font-size: .12rem;
+      line-height: .26rem;
+      span{
+        position: absolute;
+        right: .2rem;
+      }
+    }
+    .first{
+      border-bottom: 1px solid #ccc;
+    }
+  }
+  .headtit{
+    margin-top: .05rem;
+    h2{
+      line-height: .5rem;
+      text-align: center;
+      font-weight: normal;
+      border-bottom: 1px solid #ccc;
+      background: #fff;
+    }
+  }
+  .fonticon{
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    padding-bottom: .15rem;
+    dl{
+      width: 25%;
+      text-align: center;
+      color: #fff;
+      margin-top: .1rem;
+      font-size: .1rem;
+      dt{
+        margin-left: auto;
+        margin-right: auto;
+        line-height: .4rem;
+        width: .4rem;
+        background: skyblue;
+        border-radius: 50%;
+      }
+      dd{
+        margin-top: .07rem;
+        color: #666;
+      }
+    }
+  }
+  .oul{
+    margin-top: .06rem;
+    li{
+      line-height: .42rem;
+      padding: 0 .12rem;
+      position: relative;
+      font-size: .16rem;
+      background: #fff;
+      border-bottom: 1px solid #ccc;
+      span{
+        position: absolute;
+        right: .1rem;
+      }
+      .dropdown-menu{
+        height: .142rem;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    .green{
+      color: #2ecc40;
+    }
+    .str{
+      color: green;
+      font-weight: bold;
+      span{
+        color: black;
+        font-weight: normal;
+      }
+    }
+  }
+  .imgdiv{
+    img{
+      width: 100%;
+      height: 1.42rem;
+    }
+  }
+}

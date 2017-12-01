@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telphone=no,email=no,address=no">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1">
+
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="images/logo_ue2.png" alt="">
+            <span class="firsticon">
+                <i class="iconfont icon-fangdajing"></i>
+            </span>
+            <span class="secondicon">
+                <i class="iconfont icon-quanbudingdan-01"></i>
+            </span>
+        </h1>
+    </header>
+    <section>
+        <div class="swiper-container top">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide topp">
+                    <img src="images/P020170914511768312538.jpg" alt="">
+                </div>
+                <div class="swiper-slide topp">
+                    <img src="images/P020170914511762381584.jpg" alt="">
+                </div>
+                <div class="swiper-slide topp">
+                    <img src="images/P020170914511770976975.jpg" alt="">
+                </div>
+                <div class="swiper-slide topp">
+                    <img src="images/P020170914511773007578.jpg" alt="">
+                </div>
+        </div>
+         <ul class="tit">
+             <li class="first">
+                 <i class="iconfont icon-fengjing"></i>
+                 全国---必胜客代金券5折GO
+                 <span>2017-11-01</span>
+             </li>
+             <li>
+                 <i class="iconfont icon-fengjing"></i>
+                 关于我行企业掌银暂停服务的公告
+                 <span>2017-11-29</span>
+             </li>
+         </ul>
+         <div class="headtit">
+             <h2>
+                 便捷服务
+             </h2>
+         </div>
+         <div class="fonticon">
+             <!--<dl>-->
+                 <!--<dt>-->
+                     <!--<i class="iconfont icon-fengjing"></i>-->
+                 <!--</dt>-->
+                 <!--<dd>掌上银行下载</dd>-->
+             <!--</dl>-->
+             <!--<dl>-->
+                 <!--<dt>-->
+                     <!--<i class="iconfont icon-fengjing"></i>-->
+                 <!--</dt>-->
+                 <!--<dd>掌上银行下载</dd>-->
+             <!--</dl>-->
+             <!--<dl>-->
+                 <!--<dt>-->
+                     <!--<i class="iconfont icon-fengjing"></i>-->
+                 <!--</dt>-->
+                 <!--<dd>掌上银行下载</dd>-->
+             <!--</dl>-->
+             <!--<dl>-->
+                 <!--<dt>-->
+                     <!--<i class="iconfont icon-fengjing"></i>-->
+                 <!--</dt>-->
+                 <!--<dd>掌上银行下载</dd>-->
+             <!--</dl>-->
+             <!--<dl>-->
+                 <!--<dt>-->
+                     <!--<i class="iconfont icon-fengjing"></i>-->
+                 <!--</dt>-->
+                 <!--<dd>掌上银行下载</dd>-->
+             <!--</dl>-->
+             <!--<dl>-->
+                 <!--<dt>-->
+                     <!--<i class="iconfont icon-fengjing"></i>-->
+                 <!--</dt>-->
+                 <!--<dd>掌上银行下载</dd>-->
+             <!--</dl>-->
+             <!--<dl>-->
+                 <!--<dt>-->
+                     <!--<i class="iconfont icon-fengjing"></i>-->
+                 <!--</dt>-->
+                 <!--<dd>掌上银行下载</dd>-->
+             <!--</dl>-->
+             <!--<dl>-->
+                 <!--<dt>-->
+                     <!--<i class="iconfont icon-fengjing"></i>-->
+                 <!--</dt>-->
+                 <!--<dd>掌上银行下载</dd>-->
+             <!--</dl>-->
+         </div>
+         <ul class="oul">
+             <li class="dropdown">
+                 <div class="top dropdown-toggle" data-toggle="dropdown">
+                     学生时代
+                 <span>
+                     >
+                 </span>
+                 </div>
+                 <div class="dropdown-menu" role="menu">
+                     <img src="images/P020170914511768312538.jpg" alt="">
+                 </div>
+             </li>
+             <li class="dropdown">
+                 <div class="top dropdown-toggle" data-toggle="dropdown">
+                     品质家庭
+                 <span>
+                     >
+                 </span>
+                 </div>
+                 <div class="dropdown-menu" role="menu">
+                     <img src="images/P020170914511768312538.jpg" alt="">
+                 </div>
+             </li>
+             <li class="dropdown green">
+                 <div class="top dropdown-toggle" data-toggle="dropdown">
+                     家庭保养
+                 <span>
+                     >
+                 </span>
+                 </div>
+                 <div class="dropdown-menu" role="menu">
+                     <img src="images/P020170914511768312538.jpg" alt="">
+                 </div>
+             </li>
+         </ul>
+         <div class="imgdiv">
+             <img src="images/P020170914511775508328.jpg" alt="">
+         </div>
+    </section>
+    <footer>
+
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script>
+        var swiper = new Swiper('.top',{
+        })
+        $('.fonticon dl dt').click(function(){
+            $(this).addClass('on').parent().siblings().children('dt').removeClass('on')
+        })
+
+        function ajax(url) {
+            return new Promise(function (resolve, reject) {
+                var xhr = null;
+                var handler = function () {
+                    if (xhr.readyState !== 4) return;
+                    if (xhr.status === 200) {
+                        resolve(xhr.responseText);
+                    } else {
+                        reject(new Error(xhr.statusText));
+                    }
+                }
+                if (window.XMLHttpRequest) {
+                    xhr = new XMLHttpRequest();
+                } else {
+                    xhr = new ActiveXObject('Microsoft.XMLHTTP');
+                }
+                xhr.open('get', url, true);
+                xhr.send();
+                xhr.onreadystatechange = handler;
+            })
+        }
+        ajax('http://localhost:8080/log').then(function (result) {
+            var data = JSON.parse(result);
+            for (var i = 0; i < data.length; i++) {
+                var dl = document.createElement('dl');
+                dl.innerHTML = `<dt><i class="iconfont ${data[i].text}"></i></dt>
+                        <dd>${data[i].name}</dd>`;
+                document.querySelector('.fonticon').appendChild(dl);
+            }
+        }).catch(function (error) {
+            console.log(error);
+        })
+
+
+    </script>
+</body>
+</html>
